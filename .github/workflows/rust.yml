@@ -52,3 +52,5 @@ jobs:
       run: cargo test --manifest-path=./isbn-verifier/Cargo.toml --verbose
     - name: allergies
       run: cargo test --manifest-path=./allergies/Cargo.toml --verbose
+    - name: luhn
+      run: cargo test --manifest-path=./luhn/Cargo.toml --verbose
