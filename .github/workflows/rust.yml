@@ -44,3 +44,5 @@ jobs:
       run: cargo test --manifest-path=./collatz-conjecture/Cargo.toml --verbose
     - name: diffie-hellman
       run: cargo test --manifest-path=./diffie-hellman/Cargo.toml --verbose
+    - name: clock
+      run: cargo test --manifest-path=./clock/Cargo.toml --verbose
