@@ -54,3 +54,5 @@ jobs:
       run: cargo test --manifest-path=./allergies/Cargo.toml --verbose
     - name: luhn
       run: cargo test --manifest-path=./luhn/Cargo.toml --verbose
+    - name: luhn-from
+      run: cargo test --manifest-path=./luhn-from/Cargo.toml --verbose
