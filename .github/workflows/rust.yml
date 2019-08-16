@@ -48,3 +48,5 @@ jobs:
       run: cargo test --manifest-path=./clock/Cargo.toml --verbose
     - name: sieve
       run: cargo test --manifest-path=./sieve/Cargo.toml --verbose
+    - name: isbn-verifier
+      run: cargo test --manifest-path=./isbn-verifier/Cargo.toml --verbose
