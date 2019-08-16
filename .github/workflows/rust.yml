@@ -1,0 +1,46 @@
+name: Rust
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: hello-world
+      run: cargo test --manifest-path=./hello-world/Cargo.toml --verbose
+    - name: leap
+      run: cargo test --manifest-path=./leap/Cargo.toml --verbose
+    - name: raindrops
+      run: cargo test --manifest-path=./raindrops/Cargo.toml --verbose
+    - name: nth-prime
+      run: cargo test --manifest-path=./nth-prime/Cargo.toml --verbose
+    - name: beer-song
+      run: cargo test --manifest-path=./beer-song/Cargo.toml --verbose
+    - name: proverb
+      run: cargo test --manifest-path=./proverb/Cargo.toml --verbose
+    - name: difference-of-squares
+      run: cargo test --manifest-path=./difference-of-squares/Cargo.toml --verbose
+    - name: sum-of-multiples
+      run: cargo test --manifest-path=./sum-of-multiples/Cargo.toml --verbose
+    - name: grains
+      run: cargo test --manifest-path=./grains/Cargo.toml --verbose
+    - name: prime-factors
+      run: cargo test --manifest-path=./prime-factors/Cargo.toml --verbose
+    - name: armstrong-numbers
+      run: cargo test --manifest-path=./armstrong-numbers/Cargo.toml --verbose
+    - name: reverse-string
+      run: cargo test --manifest-path=./reverse-string/Cargo.toml --verbose
+    - name: gigasecond
+      run: cargo test --manifest-path=./gigasecond/Cargo.toml --verbose
+    - name: bob
+      run: cargo test --manifest-path=./bob/Cargo.toml --verbose
+    - name: matching-brackets
+      run: cargo test --manifest-path=./matching-brackets/Cargo.toml --verbose
+    - name: series
+      run: cargo test --manifest-path=./series/Cargo.toml --verbose
+    - name: collatz-conjecture
+      run: cargo test --manifest-path=./collatz-conjecture/Cargo.toml --verbose
+    - name: diffie-hellman
+      run: cargo test --manifest-path=./diffie-hellman/Cargo.toml --verbose
